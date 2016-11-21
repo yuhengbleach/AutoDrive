@@ -1,0 +1,2 @@
+common/av_comm:common/av_core:common/av_msgs:movsim-rpc
+-DCATKIN_DEVEL_PREFIX=/home/zhouji/Documents/autodrive/rpc_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zhouji/Documents/autodrive/rpc_ws/install -G Unix Makefiles

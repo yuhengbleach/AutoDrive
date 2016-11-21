@@ -1,0 +1,8 @@
+prefix=/home/zhouji/Documents/autodrive/cakin_ws/install
+
+Name: av_localization
+Description: Description of av_localization
+Version: 0.0.0
+Cflags: -I/home/zhouji/Documents/autodrive/cakin_ws/install/include
+Libs: -L/home/zhouji/Documents/autodrive/cakin_ws/install/lib 
+Requires: 

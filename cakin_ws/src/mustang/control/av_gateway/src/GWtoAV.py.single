@@ -1,0 +1,78 @@
+#!/usr/bin/env python
+import json
+import rospy
+from std_msgs.msg import String
+from av_msgs.msg import VehicleMsg
+from gateway_code import canio
+
+#def retrive_msg(msg_name, msg_data):
+#    obj = eval(msg_name+"()")
+#    for item in msg_data["signals"]:
+#        nm = item["name"]
+#        val = item["value"]
+#        print "%s=%s" %(nm,val)
+#        objstr = ".".join(["obj",nm])
+#        print objstr
+#        subobj = eval(objstr)
+#        print subobj
+#        subobj = val
+#        print subobj
+#    print obj    
+#    return obj
+
+#def retrive_msg(msg_name, msg_data):
+#    if msg_name == "EMS_3":
+#        print "name right"
+#        obj = EMS_3()
+#        for item in msg_data["signals"]:
+#            print item["name"]
+#            if item["name"] == "STAT_AcceleratorpedalPosition":
+#                print "yes"
+#                obj.STAT_AcceleratorpedalPosition = item["value"]
+#    return obj
+
+def retrive_msg(msg_id, decoded_msg):
+    obj = VehicleMsg()
+    obj.id = msg_id
+    json_msg = {}
+    for key in decoded_msg.keys():
+        if not key == "signals":
+            json_msg[key] = decoded_msg[key]
+        else:
+            signals = decoded_msg[key]
+            json_msg["signals"] = []
+            for sig in signals:
+                tmp = {"name":sig["name"], "value":sig["value"]}
+                json_msg["signals"].append(tmp)
+    js = json.dumps(json_msg, ensure_ascii=False)
+    obj.data = js
+    return obj
+
+def GWtoAV():
+    #pub = rospy.Publisher('gateway_', EMS_3, queue_size=10)
+    pub = rospy.Publisher('gateway_', VehicleMsg, queue_size=10)
+    rospy.init_node('GWtoAV', anonymous=True)
+    rate = rospy.Rate(50) # 10hz
+    io = canio.canio()
+    while not rospy.is_shutdown():
+        decoded_msg = io.receive_once()
+        print decoded_msg
+        if not decoded_msg:
+            rospy.logwarn("empty msg")
+            continue
+        msg_name = decoded_msg["name"]
+        s_msg = "name:%s" %decoded_msg["name"]
+        msg_id = decoded_msg["id"]
+        for k in decoded_msg["signals"]:
+            s_msg += "%s=%d\t" %(k["name"],k["value"])
+        s_msg += "%s" % rospy.get_time()
+        obj = retrive_msg(msg_id, decoded_msg)
+        rospy.loginfo(str(obj))
+        pub.publish(obj)
+        rate.sleep()
+
+if __name__ == '__main__':
+    try:
+        GWtoAV()
+    except rospy.ROSInterruptException:
+        pass

@@ -1,0 +1,12 @@
+no log4j from commandline provided. Use default log4j configuration from=jar:file:/Users/Zhou/Documents/Source_Code/movsim/viewer/target/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar!/config/log4j.properties
+No output path provided via option. Set output path to current directory!
+0 [main] INFO  (FileUtils.java:dirExists:129) - dir exits: . exists!
+ projectname = city_example
+3 [main] INFO  (ViewProperties.java:loadDefaultProperties:31) - read default properties from file /config/defaultviewerconfig.properties
+ 4 [main] INFO  (ViewProperties.java:loadProperties:78) - cannot find /Users/Zhou/Documents/Source_Code/movsim/sim/features/output/city_example.properties. Fall back to default properties.
+ project = city_example
+22 [main] INFO  (FileUnmarshaller.java:load:63) - try to open file=jar:file:/Users/Zhou/Documents/Source_Code/movsim/viewer/target/MovsimViewer-1.6.0-SNAPSHOT-jar-with-dependencies.jar!/schema/MovsimScenario.xsd
+ 418 [main] INFO  (RoadTypeSpeeds.java:init:44) - mapping of default speed: roadtype=MOTORWAY --> speed=108.0 km/h
+ 418 [main] INFO  (RoadTypeSpeeds.java:init:44) - mapping of default speed: roadtype=TOWN --> speed=70.00000000000001 km/h
+ Unexpected end of simulator: perform ShutdownHooks
+perform shutdown callbacks=0

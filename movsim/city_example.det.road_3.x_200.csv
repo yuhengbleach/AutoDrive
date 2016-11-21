@@ -1,0 +1,5 @@
+# number of lanes = 2. (most inner lane is = 1 and increasing to outer lanes)
+# dtSample in seconds = 60.0000 
+# logging lanes = false
+#      t[s],nVehTotal[1],nTotalAccum[1],   V[km/h],flow[1/h/lane],  occup[1],1/<1/v>[km/h],<1/Tbrut>[1/s],
+       0.0,          0,          0,      0.000,        0.0,  0.0000000,      0.000,    0.00000, 

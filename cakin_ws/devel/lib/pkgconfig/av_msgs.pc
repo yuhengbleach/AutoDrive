@@ -1,0 +1,8 @@
+prefix=/home/zhouji/Documents/autodrive/cakin_ws/devel
+
+Name: av_msgs
+Description: Description of av_msgs
+Version: 0.0.0
+Cflags: -I/home/zhouji/Documents/autodrive/cakin_ws/devel/include
+Libs: -L/home/zhouji/Documents/autodrive/cakin_ws/devel/lib 
+Requires: 

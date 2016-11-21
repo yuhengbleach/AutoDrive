@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<params>
+    <pid>0</pid>
+    <adrc>0</adrc>
+    <kinematic>0</kinematic>
+    <pbc>0</pbc>
+    <velocity_filter>1</velocity_filter>
+    <acceleration_filter>0</acceleration_filter>
+    <pose_filter>0</pose_filter>
+    <trajectory>1</trajectory>
+    <control_signal>1</control_signal>
+    <desired_velocity>0</desired_velocity>
+    <gear>0</gear>
+    <radius>200</radius>
+    <longitudinal_pid_pos>1</longitudinal_pid_pos>
+
+</params>

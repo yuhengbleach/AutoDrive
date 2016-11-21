@@ -1,0 +1,5 @@
+<launch>
+    <node name="test_gpu_node" pkg="av_planning" type="test_gpu_node" output="screen">
+        <rosparam command="load" file="$(find av_planning)/config/av_planning.yaml" />
+    </node>
+</launch>

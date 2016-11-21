@@ -1,0 +1,4 @@
+uint64 timestamp
+float64 acc_pedal_pos
+float64 brake_pedal_pos
+float64 steering_angle

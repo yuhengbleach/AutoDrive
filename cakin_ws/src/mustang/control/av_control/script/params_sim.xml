@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<params>
+    <rate>2000</rate>
+
+
+    <noise_pos_scale>0</noise_pos_scale>
+    <noise_ang_scale>0</noise_ang_scale>
+    <noise_vel_scale>0</noise_vel_scale>
+    <noise_acc_scale>0</noise_acc_scale>
+    <noise_w_scale>0</noise_w_scale>
+    <delay_acc_pedal>0</delay_acc_pedal>
+    <delay_brake_pedal>0</delay_brake_pedal>
+    <delay_steer_angle>0</delay_steer_angle>
+
+<!--
+    <noise_pos_scale>0.05</noise_pos_scale>
+    <noise_ang_scale>0</noise_ang_scale>
+    <noise_vel_scale>0.02</noise_vel_scale>
+    <noise_acc_scale>0.01</noise_acc_scale>
+    <noise_w_scale>0</noise_w_scale>
+    <delay_acc_pedal>0</delay_acc_pedal>
+    <delay_brake_pedal>0</delay_brake_pedal>
+    <delay_steer_angle>0</delay_steer_angle>
+-->
+</params>

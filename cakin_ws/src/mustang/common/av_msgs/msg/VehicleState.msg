@@ -1,0 +1,11 @@
+uint64 timestamp
+float64 x
+float64 y
+float64 ang
+float64 vel_x
+float64 vel_y
+float64 vel_ang
+float64 acc_x
+float64 acc_y
+float64 acc_ang
+float64 ref_curvature

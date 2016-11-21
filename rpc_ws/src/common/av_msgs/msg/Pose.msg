@@ -1,0 +1,14 @@
+# 时间戳
+uint64 timestamp
+# 轨迹x坐标
+float64 x
+# 轨迹y坐标
+float64 y
+# 轨迹朝向角坐标
+float64 theta
+# 曲率
+float64 curvature
+# 速度
+float64 velocity
+# 加速度
+float64 acceleration

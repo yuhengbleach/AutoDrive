@@ -1,0 +1,8 @@
+prefix=/home/zhouji/Documents/autodrive/rpc_ws/devel
+
+Name: av_core
+Description: Description of av_core
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zhouji/Documents/autodrive/rpc_ws/devel/lib 
+Requires: 

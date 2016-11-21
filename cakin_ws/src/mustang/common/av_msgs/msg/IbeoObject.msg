@@ -1,0 +1,15 @@
+uint16 object_id
+float32 object_box_center_x
+float32 object_box_center_y
+float32 object_box_length
+float32 object_box_width
+float32 object_box_orientation
+float32 relative_velocity_x
+float32 relative_velocity_y
+float32 relative_velocity_sigma_x
+float32 relative_velocity_sigma_y
+uint8 object_class
+float32 object_class_certainty
+float32 exist_measurement
+
+

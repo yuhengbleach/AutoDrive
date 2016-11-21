@@ -1,0 +1,164 @@
+{
+    "filename" : "/Users/didi/Desktop/Pluto_Test1.dbc",
+    "version" : null,
+    "attribute_definitions" : {
+    },
+    "messages" : {
+        "101" : {
+            "name" : "Message_CanCaseXL",
+            "sendr" : "Node_CanCaseXL",
+            "length" : 7,
+            "signals" : {
+                "Trajectory_6" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Trajectory_5" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Trajectory_4" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Trajectory_3" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Trajectory_2" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Trajectory_1" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Trajectory_0" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                }
+            }
+        },
+        "10" : {
+            "name" : "Message_PC",
+            "sender" : "Node_PC",
+            "length" : 4,
+            "signals" : {
+                "Vehicle_Speed" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Steering_Angle" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Control_Flag" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Acceleartion" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                }
+            }
+        },
+        "110" : {
+            "name" : "Message_PC_110",
+            "sender" : "Node_PC",
+            "length" : 4,
+            "signals" : {
+                "Vehicle_Speed" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Steering_Angle" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Control_Flag" : {
+                    "bit_start" : 0,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "Acceleartion" : {
+                    "bit_start" : 1,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                }
+            }
+        }
+    }
+}

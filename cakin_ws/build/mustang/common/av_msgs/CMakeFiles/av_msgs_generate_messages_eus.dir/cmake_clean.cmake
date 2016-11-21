@@ -1,0 +1,43 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/av_msgs_generate_messages_eus"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/ControlSignal.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/TrafficLightLoc.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/GpsData.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/CameraTelescopic.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/TrafficLight.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/Object3D.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/StateMsg.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/LaneMarker.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/IbeoPoint.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/SectionList.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/TrafficLightMapData.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/Pose.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/RadarObjectList.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/IbeoObject.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/CameraBinocular.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/CameraVelodyneObjectList.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/VelodynePoints.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/GridMap.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/Dest.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/VehicleState.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/RadarObject.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/WayPoint.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/IbeoObjectList.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/TrafficLightDetect.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/DynamicObstacle.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/Trajectory.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/Localize.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/IbeoPointList.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/VehicleMsg.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/RSDSObjectList.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/FusionMap.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/msg/RSDSObject.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/srv/getLocalLanemarkers.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/srv/getPointOnRoad.l"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/share/roseus/ros/av_msgs/manifest.l"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/av_msgs_generate_messages_eus.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

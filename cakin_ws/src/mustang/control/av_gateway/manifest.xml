@@ -1,0 +1,17 @@
+<package>
+  <description brief="av_gateway">
+
+     av_gateway
+
+  </description>
+  <author>hemengpeng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/av_gateway</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+
+</package>
+
+

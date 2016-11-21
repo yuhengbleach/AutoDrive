@@ -1,0 +1,85 @@
+control_rate : 50
+simulation : true
+debug : true
+record: false
+trajectory_queue_size : 10
+localize_queue_size : 10
+gateway_queue_size : 10
+time_scale : 1
+
+limit_acc_pedal : 1
+limit_brake_pedal : 10000
+limit_steering_angle : 1000
+
+longitudinal_controller_type : pid
+longitudinal_pos_controller_type : pid
+lateral_controller_type : kinematic
+
+
+longitudinal_controller/threshold_acc2brake : -0
+longitudinal_controller/threshold_brake2acc : 0
+
+
+longitudinal_pid_controller/gain_p : 0.1
+longitudinal_pid_controller/gain_i : 0
+longitudinal_pid_controller/gain_d : 0
+longitudinal_pid_controller/ratio_acc_pedal : 0.1
+longitudinal_pid_controller/ratio_brake_pedal : 1
+
+longitudinal_ADRC_controller/ratio_acc_pedal : 5
+longitudinal_ADRC_controller/ratio_brake_pedal : 1
+longitudinal_ADRC_controller/max_acc_pedal : 0.3
+longitudinal_ADRC_controller/td_r : 1
+longitudinal_ADRC_controller/td_h : 0.02
+longitudinal_ADRC_controller/eso_h : 0.02
+longitudinal_ADRC_controller/eso_b01 : 20
+longitudinal_ADRC_controller/eso_b02 : 30
+longitudinal_ADRC_controller/eso_b03 : 20
+longitudinal_ADRC_controller/eso_b04 : 0.1
+longitudinal_ADRC_controller/eso_b0 : 3
+longitudinal_ADRC_controller/eso_a01 : 0.8
+longitudinal_ADRC_controller/eso_a02 : 0.5
+longitudinal_ADRC_controller/eso_a03 : 0.5
+longitudinal_ADRC_controller/eso_a04 : 0.1
+longitudinal_ADRC_controller/eso_h0 : 0.1
+longitudinal_ADRC_controller/sef_a01 : 0.7
+longitudinal_ADRC_controller/sef_a02 : 1.5
+longitudinal_ADRC_controller/sef_h0 : 0.5
+longitudinal_ADRC_controller/sef_b0 : 3
+longitudinal_ADRC_controller/sef_kp : 0.01
+longitudinal_ADRC_controller/sef_kd : 0.0005
+longitudinal_ADRC_controller/filter_a: 0.05
+longitudinal_ADRC_controller/longitudinal_preview_time: 0.5
+
+lateral_controller/input_filter_ratio: 0.05
+lateral_controller/output_filter_ratio: 0.1
+lateral_controller/preview_time : 2.2
+
+lateral_kinematic_controller/kp_steer: 1.2
+lateral_kinematic_controller/kd_phi: 200
+lateral_kinematic_controller/steer_ratio: 10
+
+lateral_pbc_controller/pbc_k0 : 1
+lateral_pbc_controller/pbc_emax : 0.4
+lateral_pbc_controller/pbc_kp : 0.004
+lateral_pbc_controller/pbc_ki : 0.0005
+lateral_pbc_controller/pbc_lambda : 2
+lateral_pbc_controller/steer_ratio : 5
+
+vehicle_parameters/road_friction_coef : 1
+vehicle_parameters/vehicle_mass : 2000
+vehicle_parameters/front_axle_cog_distance : 1.13
+vehicle_parameters/rear_axle_cog_distance : 1.69
+vehicle_parameters/front_tire_cornering_stiff : 50000
+vehicle_parameters/rear_tire_cornering_stiff : 50000
+
+longitudinal_pid_pos_controller/pos_gain_p : 0.2
+longitudinal_pid_pos_controller/pos_gain_i : 0
+longitudinal_pid_pos_controller/pos_gain_d : 0
+longitudinal_pid_pos_controller/vel_gain_p : 1
+longitudinal_pid_pos_controller/vel_gain_i : 1
+longitudinal_pid_pos_controller/vel_gain_d : 0
+longitudinal_pid_pos_controller/ratio_acc_pedal : 0
+longitudinal_pid_pos_controller/ratio_brake_pedal : 10
+longitudinal_pid_pos_controller/e_pos_min : 0.2
+longitudinal_pid_pos_controller/final_brake : 1000

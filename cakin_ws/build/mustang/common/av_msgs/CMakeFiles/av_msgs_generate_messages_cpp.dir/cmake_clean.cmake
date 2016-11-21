@@ -1,0 +1,42 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/av_msgs_generate_messages_cpp"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/ControlSignal.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/TrafficLightLoc.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/GpsData.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/CameraTelescopic.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/TrafficLight.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/Object3D.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/StateMsg.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/LaneMarker.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/IbeoPoint.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/SectionList.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/TrafficLightMapData.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/Pose.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/RadarObjectList.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/IbeoObject.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/CameraBinocular.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/CameraVelodyneObjectList.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/VelodynePoints.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/GridMap.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/Dest.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/VehicleState.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/RadarObject.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/WayPoint.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/IbeoObjectList.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/TrafficLightDetect.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/DynamicObstacle.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/Trajectory.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/Localize.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/IbeoPointList.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/VehicleMsg.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/RSDSObjectList.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/FusionMap.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/RSDSObject.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/getLocalLanemarkers.h"
+  "/home/zhouji/Documents/autodrive/cakin_ws/devel/include/av_msgs/getPointOnRoad.h"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/av_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

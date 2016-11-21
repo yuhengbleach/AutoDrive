@@ -1,0 +1,8 @@
+prefix=/home/zhouji/Documents/autodrive/cakin_ws/install
+
+Name: av_control
+Description: Description of av_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zhouji/Documents/autodrive/cakin_ws/install/lib 
+Requires: 

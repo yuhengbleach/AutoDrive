@@ -1,0 +1,2 @@
+mustang/common/av_comm:mustang/common/av_core:mustang/common/av_msgs:mustang/control/av_control:mustang/planning/av_planning
+-DCATKIN_DEVEL_PREFIX=/home/zhouji/Documents/autodrive/cakin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zhouji/Documents/autodrive/cakin_ws/install -G Unix Makefiles

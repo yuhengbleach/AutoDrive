@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<params>
+    <control_cycle>0.1</control_cycle>
+    <m_id>267</m_id>
+    <k_p>1</k_p>
+    <k_i>0.4</k_i>
+    <pedal_gain>1.3</pedal_gain>
+    <max_e_i>15</max_e_i>
+    <max_pedal>20</max_pedal>
+</params>

@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find av_planning)/launch/planning_core.launch" />
+    <include file="$(find av_control)/launch/control.launch" />
+</launch>

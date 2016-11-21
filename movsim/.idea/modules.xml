@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Movsim.iml" filepath="$PROJECT_DIR$/Movsim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/MovsimCommon.iml" filepath="$PROJECT_DIR$/common/MovsimCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumption/MovsimConsumption.iml" filepath="$PROJECT_DIR$/consumption/MovsimConsumption.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/MovsimCore.iml" filepath="$PROJECT_DIR$/core/MovsimCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewer/MovsimViewer.iml" filepath="$PROJECT_DIR$/viewer/MovsimViewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xsd/MovsimXsd.iml" filepath="$PROJECT_DIR$/xsd/MovsimXsd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xsd/target/generated-sources/generated-sources.iml" filepath="$PROJECT_DIR$/xsd/target/generated-sources/generated-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewer/src/main/main.iml" filepath="$PROJECT_DIR$/viewer/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/src/main/main1.iml" filepath="$PROJECT_DIR$/core/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xsd/src/main/main2.iml" filepath="$PROJECT_DIR$/xsd/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/src/main/main3.iml" filepath="$PROJECT_DIR$/common/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumption/src/main/main4.iml" filepath="$PROJECT_DIR$/consumption/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/src/test/test.iml" filepath="$PROJECT_DIR$/core/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewer/src/test/test1.iml" filepath="$PROJECT_DIR$/viewer/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/src/test/test2.iml" filepath="$PROJECT_DIR$/common/src/test/test2.iml" />
+    </modules>
+  </component>
+</project>

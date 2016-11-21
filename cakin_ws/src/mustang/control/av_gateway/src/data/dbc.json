@@ -1,0 +1,2681 @@
+{
+    "filename" : "Qoros_Pluto_GWM_ACU_CAN_CR_V0_1_5_GWM.dbc",
+    "version" : null,
+    "attribute_definitions" : {
+        "DiagRequest" : {
+            "0" : "no",
+            "1" : "yes"
+        },
+        "DiagResponse" : {
+            "0" : "no",
+            "1" : "yes"
+        },
+        "NmAsrMessage" : {
+            "0" : "no",
+            "1" : "yes"
+        },
+        "GenMsgILSupport" : {
+            "0" : "no",
+            "1" : "yes"
+        },
+        "NmMessage" : {
+            "0" : "no",
+            "1" : "yes"
+        },
+        "GenMsgSendType" : {
+            "0" : "Cyclic",
+            "1" : "NotUsed",
+            "2" : "NotUsed",
+            "3" : "NotUsed",
+            "4" : "NotUsed",
+            "5" : "NotUsed",
+            "6" : "NotUsed",
+            "7" : "IfActive",
+            "8" : "NoMsgSendType",
+            "9" : "NotUsed"
+        },
+        "DiagState" : {
+            "0" : "no",
+            "1" : "yes"
+        },
+        "DiagUudtResponse" : {
+            "0" : "false",
+            "1" : "true"
+        }
+    },
+    "messages" : {
+        "267" : {
+            "name" : "ACU_4",
+            "sender" : "Vector__XXX",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "ACU_STAT_AccPedalPos" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 0.39400000000000002,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 100
+                },
+                "ACU_TurnIndication" : {
+                    "bit_start" : 12,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "enums" : {
+                        "3" : "Invalid signal",
+                        "2" : "Right ON",
+                        "1" : "Left ON",
+                        "0" : "OFF"
+                    }
+                },
+                "ALIVE_ACU_4" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "CHKSM_ACU_4" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                }
+            }
+        },
+        "417" : {
+            "name" : "ACU_3",
+            "sender" : "Vector__XXX",
+            "length" : 1,
+            "attributes" : {
+                "GenMsgILSupport" : "1"
+            },
+            "signals" : {
+                "FMode_ACK" : {
+                    "bit_start" : 2,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "ACU ACK FaileSafe/LimpHome tran",
+                        "0" : "Don't care"
+                    }
+                },
+                "TMode_ACK" : {
+                    "bit_start" : 1,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "ACU ack takeover mode transition",
+                        "0" : "Don't care"
+                    }
+                },
+                "AutoDriving_ACU" : {
+                    "bit_start" : 0,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 7,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "ACU has been ready",
+                        "0" : "Don't care"
+                    }
+                }
+            }
+        },
+        "416" : {
+            "name" : "GWM_2",
+            "sender" : "GWM",
+            "length" : 1,
+            "attributes" : {
+                "GenMsgILSupport" : "1"
+            },
+            "signals" : {
+                "GModeTrans" : {
+                    "bit_start" : 0,
+                    "length" : 3,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 7,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "7" : "Reserved",
+                        "6" : "Reserved",
+                        "5" : "Reserved",
+                        "4" : "Reserved",
+                        "3" : "Reserved",
+                        "2" : "GWM go to FailSafe/LimpHome Mode",
+                        "1" : "GWM go to Autonomous Mode",
+                        "0" : "GWM go to Takeover Mode"
+                    }
+                }
+            }
+        },
+        "266" : {
+            "name" : "GWM_1",
+            "sender" : "GWM",
+            "length" : 4,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "OccuredFaults" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit"
+                },
+                "ActiveFaults" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit"
+                },
+                "GModeInfo" : {
+                    "bit_start" : 12,
+                    "length" : 3,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 7,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "7" : "Invalid signal",
+                        "6" : "Reserved",
+                        "5" : "Reserved",
+                        "4" : "Reserved",
+                        "3" : "GWM ready for Auto Mode",
+                        "2" : "GWM at FailSafe/LimpHome Mode",
+                        "1" : "GWM at Autonomous Mode",
+                        "0" : "GWM at Takeover Mode "
+                    }
+                },
+                "CHKSM_GWM_1" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_GWM_1" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                }
+            }
+        },
+        "265" : {
+            "name" : "EPS_3",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "STAT_Ignition" : {
+                    "bit_start" : 44,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "ON",
+                        "0" : "OFF"
+                    }
+                },
+                "CommunicationError_ACU" : {
+                    "bit_start" : 28,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "enums" : {
+                        "3" : "Message counter",
+                        "2" : "CRC",
+                        "1" : "Timeout",
+                        "0" : "No error"
+                    }
+                },
+                "STAT_SupplyVoltage" : {
+                    "bit_start" : 36,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Overvoltage",
+                        "1" : "Undervoltage",
+                        "0" : "Voltage in normal range"
+                    }
+                },
+                "MirrorSignalEngage_ACU" : {
+                    "bit_start" : 27,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "Engaged",
+                        "0" : "Dis-engaged"
+                    }
+                },
+                "MirrorSignalEnable_ACU" : {
+                    "bit_start" : 26,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "Enabled",
+                        "0" : "Disabled"
+                    }
+                },
+                "Interface_Errors" : {
+                    "bit_start" : 42,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Plausibility error",
+                        "2" : "Internal error",
+                        "1" : "Communication error",
+                        "0" : "No error"
+                    }
+                },
+                "Engine_Speed_State" : {
+                    "bit_start" : 40,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Error",
+                        "1" : "Running",
+                        "0" : "Not running"
+                    }
+                },
+                "Max_Steering_Angle_Speed" : {
+                    "bit_start" : 9,
+                    "length" : 10,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1022,
+                    "unit" : "°/s"
+                },
+                "STAT_EPSSystem" : {
+                    "bit_start" : 34,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Error",
+                        "2" : "EPS DriveUp",
+                        "1" : "EPS DriveDown",
+                        "0" : "EPS OFF"
+                    }
+                },
+                "VehicleSpeedState" : {
+                    "bit_start" : 38,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Error",
+                        "2" : "Degraded",
+                        "1" : "Moving",
+                        "0" : "Standstill"
+                    }
+                },
+                "Driver_Intervention" : {
+                    "bit_start" : 19,
+                    "length" : 3,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "enums" : {
+                        "7" : "Invalid",
+                        "6" : "Reserved",
+                        "5" : "Deactivated by Tuning",
+                        "4" : "Deactivated by ACU",
+                        "3" : "Disregarded",
+                        "2" : "Inactive",
+                        "1" : "DriverIntervention",
+                        "0" : "NoDriverIntervention"
+                    }
+                },
+                "Max_Steering_Angle" : {
+                    "bit_start" : 0,
+                    "length" : 9,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 510
+                },
+                "RackSpeedMonitoring" : {
+                    "bit_start" : 22,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Deactivated",
+                        "2" : "Inactive",
+                        "1" : "Error",
+                        "0" : "No error - Monitoring active"
+                    }
+                },
+                "RackPositionMonitoring" : {
+                    "bit_start" : 24,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Deactivated - By Tuning",
+                        "2" : "Inactive",
+                        "1" : "Error - Monitoring active",
+                        "0" : "No error - Monitoring active"
+                    }
+                },
+                "ALIVE_EPS_3" : {
+                    "bit_start" : 56,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "CHKSM_EPS_3" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                }
+            }
+        },
+        "1429" : {
+            "name" : "WarnMsg_ACU",
+            "sender" : "Vector__XXX",
+            "length" : 3,
+            "attributes" : {
+                "GenMsgILSupport" : "1"
+            },
+            "signals" : {
+                "BitBlinking_ACU" : {
+                    "bit_start" : 22,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Invalid Signal",
+                        "2" : "3Hz",
+                        "1" : "1Hz",
+                        "0" : "No action"
+                    }
+                },
+                "BitRefreshRate_ACU" : {
+                    "bit_start" : 18,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14,
+                    "unit" : "Seconds"
+                },
+                "BitStatus_ACU" : {
+                    "bit_start" : 16,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Reset",
+                        "0" : "Set"
+                    }
+                },
+                "WarningMessageID_ACU" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ID2_ACU" : {
+                    "bit_start" : 0,
+                    "length" : 6,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 63
+                }
+            }
+        },
+        "264" : {
+            "name" : "EPS_2",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "Torsion_Bar_Torque" : {
+                    "bit_start" : 17,
+                    "length" : 15,
+                    "little_endian" : 1,
+                    "factor" : 0.0009765625,
+                    "offset" : 0,
+                    "min" : -15.9990234375,
+                    "max" : 15.9990234375,
+                    "unit" : "Nm"
+                },
+                "SteeringAngle" : {
+                    "bit_start" : 0,
+                    "length" : 14,
+                    "little_endian" : 1,
+                    "factor" : 0.10000000000000001,
+                    "offset" : 0,
+                    "min" : -819.10000000000002,
+                    "max" : 819.10000000000002,
+                    "unit" : "°"
+                },
+                "Steering_Angle_Speed" : {
+                    "bit_start" : 32,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.125,
+                    "offset" : 0,
+                    "min" : -4095,
+                    "max" : 4095,
+                    "unit" : "°/s"
+                },
+                "InterfaceStatus" : {
+                    "bit_start" : 14,
+                    "length" : 3,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "7" : "Invalid",
+                        "6" : "Reserved",
+                        "5" : "Deactivated",
+                        "4" : "Fault",
+                        "3" : "AutoMode_Engaged",
+                        "2" : "AutoMode_Ready",
+                        "1" : "AutoMode_NotReady",
+                        "0" : "Init"
+                    }
+                },
+                "CHKSM_EPS_2" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_EPS_2" : {
+                    "bit_start" : 56,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                }
+            }
+        },
+        "1292" : {
+            "name" : "NM_GWM",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "NmMessage" : "1",
+                "GenMsgCycleTime" : "640"
+            },
+            "signals" : {
+                "usrData5_GWM" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData4_GWM" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData3_GWM" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData2_GWM" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData1_GWM" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData0_GWM" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "CtrlBitVector_GWM" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "srcNodeID_GWM" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                }
+            }
+        },
+        "1301" : {
+            "name" : "NM_ACU",
+            "sender" : "Vector__XXX",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "NmMessage" : "1",
+                "GenMsgCycleTime" : "640"
+            },
+            "signals" : {
+                "usrData5_ACU" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData4_ACU" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData3_ACU" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData2_ACU" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData1_ACU" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "usrData0_ACU" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "CtrlBitVector_ACU" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "srcNodeID_ACU" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                }
+            }
+        },
+        "1685" : {
+            "name" : "DIAG_RoE_ACU",
+            "sender" : "Vector__XXX",
+            "length" : 8,
+            "attributes" : {
+                "DiagUudtResponse" : "1"
+            },
+            "signals" : {
+                "Data6_Diag_RoE_ACU" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "Data5_Diag_RoE_ACU" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "Data4_Diag_RoE_ACU" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "Data3_Diag_RoE_ACU" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "Data2_Diag_RoE_ACU" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "Data1_Diag_RoE_ACU" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "PCI_Diag_RoE_ACU" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "TA_Diag_RoE_ACU" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                }
+            }
+        },
+        "1557" : {
+            "name" : "DIAG_ACU",
+            "sender" : "Vector__XXX",
+            "length" : 8,
+            "attributes" : {
+                "DiagResponse" : "1"
+            },
+            "signals" : {
+                "DiagData6_STAT_Diag_ACU" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "DiagData5_STAT_Diag_ACU" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "DiagData4_STAT_Diag_ACU" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "DiagData3_STAT_Diag_ACU" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "DiagData2_STAT_Diag_ACU" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "DiagData1_STAT_Diag_ACU" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "PCI_STAT_Diag_ACU" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "TA_STAT_Diag_ACU" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                }
+            }
+        },
+        "263" : {
+            "name" : "ACU_2",
+            "sender" : "Vector__XXX",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "ACU_Steering_Angle" : {
+                    "bit_start" : 16,
+                    "length" : 14,
+                    "little_endian" : 1,
+                    "factor" : 0.10000000000000001,
+                    "offset" : 0,
+                    "min" : -819.20000000000005,
+                    "max" : 819.10000000000002,
+                    "unit" : "°"
+                },
+                "ACU_Engage" : {
+                    "bit_start" : 12,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "Engage angle interface",
+                        "0" : "Dis-enagage angle interface"
+                    }
+                },
+                "ACU_Enable" : {
+                    "bit_start" : 13,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "Enable angle interface",
+                        "0" : "Disable angle interface"
+                    }
+                },
+                "Driver_Disregard" : {
+                    "bit_start" : 14,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Deactivate",
+                        "1" : "Disregard",
+                        "0" : "Detect"
+                    }
+                },
+                "ALIVE_ACU_2" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "CHKSM_ACU_2" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                }
+            }
+        },
+        "262" : {
+            "name" : "ACU_1",
+            "sender" : "Vector__XXX",
+            "length" : 4,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "ACU_VLC_TarAcce" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 3,
+                    "min" : 3,
+                    "max" : 258,
+                    "unit" : "m/s2"
+                },
+                "DecToStop" : {
+                    "bit_start" : 13,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "Demand",
+                        "0" : "No demand"
+                    }
+                },
+                "ACU_VLC_TarDeceReq" : {
+                    "bit_start" : 12,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "1" : "Active",
+                        "0" : "Inactive"
+                    }
+                },
+                "ACU_VLC_TarDece" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 0.0275,
+                    "offset" : -7,
+                    "min" : -7,
+                    "max" : 0,
+                    "unit" : "m/s2"
+                },
+                "CHKSM_ACU_1" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_ACU_1" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                }
+            }
+        },
+        "177" : {
+            "name" : "EMS_2",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "10"
+            },
+            "signals" : {
+                "CHKSM_EMS_2" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_EMS_2" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "STAT_AccpedalError" : {
+                    "bit_start" : 12,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "invalid",
+                        "2" : "Reserved",
+                        "1" : "Error",
+                        "0" : "No error"
+                    }
+                },
+                "STAT_ESPTorqueRequAvail" : {
+                    "bit_start" : 14,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Not available",
+                        "0" : "Available"
+                    }
+                },
+                "STAT_DriverRequestedTorque" : {
+                    "bit_start" : 16,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "STAT_DriverRequestedTorqueTSC" : {
+                    "bit_start" : 28,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "STAT_MinTorqueIgnitionAngleCtrl" : {
+                    "bit_start" : 40,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "STAT_EngineState" : {
+                    "bit_start" : 52,
+                    "length" : 3,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 7,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "7" : "Invalid",
+                        "6" : "Reserved",
+                        "5" : "Reserved",
+                        "4" : "engine run in limp home mode ",
+                        "3" : "engine running",
+                        "2" : "activation starter powerstage",
+                        "1" : "stopped (n<n_min)",
+                        "0" : "Init"
+                    }
+                },
+                "REQ_ESS_StopPrepare" : {
+                    "bit_start" : 55,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "no request for stop prepare",
+                        "1" : "request for prepare"
+                    }
+                },
+                "STAT_IdleState" : {
+                    "bit_start" : 56,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "enums" : {
+                        "1" : "Idle active",
+                        "0" : "Idle not active"
+                    }
+                },
+                "STAT_ACState" : {
+                    "bit_start" : 57,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "enums" : {
+                        "1" : "AC compressor ON",
+                        "0" : "AC compressor OFF"
+                    }
+                },
+                "STAT_EngineTorque" : {
+                    "bit_start" : 58,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "Precise torque value",
+                        "1" : "Imprecision torque value",
+                        "2" : "Transient state",
+                        "3" : "No Realistic torque value"
+                    }
+                },
+                "STAT_Heatup" : {
+                    "bit_start" : 60,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "heat up not active",
+                        "1" : "heat up active",
+                        "2" : "reserved",
+                        "3" : "Invalid"
+                    }
+                }
+            }
+        },
+        "641" : {
+            "name" : "IC_3",
+            "sender" : "GWM",
+            "length" : 6,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "1000"
+            },
+            "signals" : {
+                "Sec" : {
+                    "bit_start" : 0,
+                    "length" : 6,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 60,
+                    "unit" : "second"
+                },
+                "Min" : {
+                    "bit_start" : 8,
+                    "length" : 6,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 60,
+                    "unit" : "min"
+                },
+                "Hour" : {
+                    "bit_start" : 16,
+                    "length" : 6,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 24,
+                    "unit" : "hour"
+                },
+                "Day" : {
+                    "bit_start" : 24,
+                    "length" : 5,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 31
+                },
+                "Month" : {
+                    "bit_start" : 32,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 12
+                },
+                "Year" : {
+                    "bit_start" : 40,
+                    "length" : 7,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 2000,
+                    "min" : 2000,
+                    "max" : 2101
+                }
+            }
+        },
+        "1777" : {
+            "name" : "DIAG_Tester1",
+            "sender" : "GWM",
+            "length" : 8,
+            "signals" : {
+                "TA_REQ_Diag_Tester1" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "PCI_REQ_Diag_Tester1" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData1_REQ_Diag_Tester1" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData2_REQ_Diag_Tester1" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData3_REQ_Diag_Tester1" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData4_REQ_Diag_Tester1" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData5_REQ_Diag_Tester1" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData6_REQ_Diag_Tester1" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                }
+            }
+        },
+        "176" : {
+            "name" : "EMS_1",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "10"
+            },
+            "signals" : {
+                "CHKSM_EMS_1" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_EMS_1" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "STAT_KickDownRequest" : {
+                    "bit_start" : 12,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "enums" : {
+                        "1" : "Kickdown switch operated",
+                        "0" : "Kickdown switch not operated"
+                    }
+                },
+                "StaticEngineTorque" : {
+                    "bit_start" : 16,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "STAT_MaxTorqueAvailable" : {
+                    "bit_start" : 28,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "STAT_MinTorqueAvailable" : {
+                    "bit_start" : 40,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "FricitionTorque" : {
+                    "bit_start" : 52,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                }
+            }
+        },
+        "258" : {
+            "name" : "ACM_2",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "10"
+            },
+            "signals" : {
+                "CHKSM_ACM_2" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_ACM_2" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "YawRate" : {
+                    "bit_start" : 12,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.080000000000000002,
+                    "offset" : -163.84,
+                    "min" : -163.84,
+                    "max" : 163.68000000000001,
+                    "unit" : "deg/s",
+                    "enums" : {
+                        "4095" : "Invalid"
+                    }
+                },
+                "LatAcceleration" : {
+                    "bit_start" : 24,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.02,
+                    "offset" : -40.960000000000001,
+                    "min" : -40.960000000000001,
+                    "max" : 40.920000000000002,
+                    "unit" : "m/s2",
+                    "enums" : {
+                        "4095" : "Invalid"
+                    }
+                },
+                "LongAcceleration" : {
+                    "bit_start" : 40,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.02,
+                    "offset" : -40.960000000000001,
+                    "min" : -40.960000000000001,
+                    "max" : 40.920000000000002,
+                    "unit" : "m/s2",
+                    "enums" : {
+                        "4095" : "Invalid"
+                    }
+                },
+                "STAT_AXSStat" : {
+                    "bit_start" : 56,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "SignalInSpecLimits",
+                        "1" : "TempSigError/Invalid",
+                        "2" : "PermSigError",
+                        "3" : "SensorInit"
+                    }
+                },
+                "STAT_AYSStat" : {
+                    "bit_start" : 58,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "SignalInSpecLimits",
+                        "1" : "TempSigError/Invalid",
+                        "2" : "PermSigError",
+                        "3" : "SensorInit"
+                    }
+                },
+                "STAT_YawStat" : {
+                    "bit_start" : 60,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "SignalInSpecLimits",
+                        "1" : "TempSigError/Invalid",
+                        "2" : "PermSigError",
+                        "3" : "SensorInit"
+                    }
+                },
+                "STAT_InternalError" : {
+                    "bit_start" : 62,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "enums" : {
+                        "0" : "NoInternalError/Invalid",
+                        "1" : "InternalError"
+                    }
+                },
+                "STAT_VoltageError" : {
+                    "bit_start" : 63,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "enums" : {
+                        "0" : "NoOvervoltUndervoltDetected",
+                        "1" : "OvervoltUndervoltDetected"
+                    }
+                }
+            }
+        },
+        "145" : {
+            "name" : "ESC_2",
+            "sender" : "GWM",
+            "length" : 5,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "ESC_BrakeLightOnRequest" : {
+                    "bit_start" : 20,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid Signal",
+                        "2" : "Reserved",
+                        "1" : "Brake Light On",
+                        "0" : "Brake Light Off"
+                    }
+                },
+                "CHKSM_ESC_2" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_ESC_2" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "STAT_ESPActiveState" : {
+                    "bit_start" : 12,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Active",
+                        "0" : "Not active"
+                    }
+                },
+                "STAT_ESCFailState" : {
+                    "bit_start" : 14,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "No error",
+                        "1" : "Error",
+                        "2" : "Initial",
+                        "3" : "Invalid"
+                    }
+                },
+                "STAT_ESCSwitchState" : {
+                    "bit_start" : 16,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "On",
+                        "0" : "Off"
+                    }
+                },
+                "STAT_TCSFailState" : {
+                    "bit_start" : 18,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Error",
+                        "0" : "No error"
+                    }
+                },
+                "STAT_HHAActive" : {
+                    "bit_start" : 22,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "not available in vehicle",
+                        "1" : "Active",
+                        "0" : "Not active"
+                    }
+                },
+                "STAT_HHAFailState" : {
+                    "bit_start" : 24,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Error",
+                        "0" : "No error"
+                    }
+                },
+                "REQ_GearHold" : {
+                    "bit_start" : 26,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Request",
+                        "0" : "No request"
+                    }
+                },
+                "STAT_TCSActiveState" : {
+                    "bit_start" : 28,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "no intervention",
+                        "1" : "intervention",
+                        "2" : "reserved",
+                        "3" : "invalid"
+                    }
+                },
+                "STAT_SlopeSigValid" : {
+                    "bit_start" : 30,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "invalid SlopeGradient",
+                        "1" : "valid SlopeGradient"
+                    }
+                },
+                "SlopeGradient" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : -100,
+                    "min" : -100,
+                    "max" : 100,
+                    "unit" : "%"
+                }
+            }
+        },
+        "2015" : {
+            "name" : "DIAG_OBD_REQ_Broadcast",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "DiagState" : "1"
+            },
+            "signals" : {
+                "PCI_Broadcast" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData1_Broadcast" : {
+                    "bit_start" : 8,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData2_Broadcast" : {
+                    "bit_start" : 16,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData3_Broadcast" : {
+                    "bit_start" : 24,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData4_Broadcast" : {
+                    "bit_start" : 32,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData5_Broadcast" : {
+                    "bit_start" : 40,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData6_Broadcast" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                },
+                "DiagData7_Broadcast" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 0
+                }
+            }
+        },
+        "245" : {
+            "name" : "SCM_4",
+            "sender" : "GWM",
+            "length" : 6,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "10"
+            },
+            "signals" : {
+                "CHKSM_SCM_4" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_SCM_4" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "STAT_SASCalibration" : {
+                    "bit_start" : 12,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Not calibrated",
+                        "0" : "Calibrated"
+                    }
+                },
+                "SteeringPosState" : {
+                    "bit_start" : 14,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Not OK",
+                        "0" : "OK"
+                    }
+                },
+                "SteeringAngleSpeed" : {
+                    "bit_start" : 16,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.043999999999999997,
+                    "offset" : -1440,
+                    "min" : -1440,
+                    "max" : 1440,
+                    "unit" : "°/s"
+                },
+                "SteeringPos" : {
+                    "bit_start" : 32,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.10000000000000001,
+                    "offset" : -800,
+                    "min" : -800,
+                    "max" : 800,
+                    "unit" : "°"
+                }
+            }
+        },
+        "752" : {
+            "name" : "IC_1",
+            "sender" : "GWM",
+            "length" : 4,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "1000"
+            },
+            "signals" : {
+                "AmbientAirTemperature" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -40,
+                    "min" : -40,
+                    "max" : 86,
+                    "unit" : "°C"
+                },
+                "Kilometre_mileage" : {
+                    "bit_start" : 8,
+                    "length" : 24,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 16777214,
+                    "unit" : "km"
+                }
+            }
+        },
+        "178" : {
+            "name" : "EMS_3",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "10"
+            },
+            "signals" : {
+                "CHKSM_EMS_3" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_EMS_3" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "STAT_BrakePedal" : {
+                    "bit_start" : 12,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Pressed",
+                        "0" : "Not pressed"
+                    }
+                },
+                "STAT_ClutchPedal" : {
+                    "bit_start" : 14,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Applied",
+                        "0" : "Not applied"
+                    }
+                },
+                "EngineSpeed" : {
+                    "bit_start" : 16,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.25,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 16383,
+                    "unit" : "rpm"
+                },
+                "EngineIdleSpeed" : {
+                    "bit_start" : 32,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.25,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 16383,
+                    "unit" : "rpm"
+                },
+                "STAT_AcceleratorpedalPosition" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 0.39400000000000002,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 100,
+                    "unit" : "%"
+                },
+                "STAT_AcceleratorPosRaw" : {
+                    "bit_start" : 56,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 0.39400000000000002,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 100,
+                    "unit" : "%"
+                }
+            }
+        },
+        "147" : {
+            "name" : "ABS_ESC_2",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "VehicleSpeedValid" : {
+                    "bit_start" : 60,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Reserved",
+                        "2" : "Initial",
+                        "1" : "Invalid",
+                        "0" : "Valid"
+                    }
+                },
+                "CHKSM_ABS_ESC_2" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_ABS_ESC_2" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "Wheelspeed_RL" : {
+                    "bit_start" : 12,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.0625,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 4095.8099999999999,
+                    "unit" : "rpm"
+                },
+                "Wheelspeed_RR" : {
+                    "bit_start" : 28,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.0625,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 4095.8099999999999,
+                    "unit" : "rpm"
+                },
+                "Wheelspeed_RL_Valid" : {
+                    "bit_start" : 44,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "Valid",
+                        "1" : "Invalid",
+                        "2" : "Initial",
+                        "3" : "Reserved"
+                    }
+                },
+                "Wheelspeed_RR_Valid" : {
+                    "bit_start" : 46,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "Valid",
+                        "1" : "Invalid",
+                        "2" : "Initial",
+                        "3" : "Reserved"
+                    }
+                },
+                "VehicleSpeed" : {
+                    "bit_start" : 48,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.074999999999999997,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 300,
+                    "unit" : "kph"
+                }
+            }
+        },
+        "146" : {
+            "name" : "ABS_ESC_1",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "20"
+            },
+            "signals" : {
+                "CHKSM_ABS_ESC_1" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_ABS_ESC_1" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "Wheelspeed_FL" : {
+                    "bit_start" : 12,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.0625,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 4095.8099999999999,
+                    "unit" : "rpm"
+                },
+                "Wheelspeed_FR" : {
+                    "bit_start" : 28,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.0625,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 4095.8099999999999,
+                    "unit" : "rpm"
+                },
+                "Wheelspeed_FL_Valid" : {
+                    "bit_start" : 44,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "Valid",
+                        "1" : "Invalid",
+                        "2" : "Initial",
+                        "3" : "Reserved"
+                    }
+                },
+                "Wheelspeed_FR_Valid" : {
+                    "bit_start" : 46,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "0" : "Valid",
+                        "1" : "Invalid",
+                        "2" : "Initial",
+                        "3" : "Reserved"
+                    }
+                },
+                "BrakePressure" : {
+                    "bit_start" : 48,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 254,
+                    "unit" : "bar"
+                },
+                "STAT_ABSBrakingInProgress" : {
+                    "bit_start" : 56,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "ABS braking in progress",
+                        "0" : "No ABS braking in progress"
+                    }
+                },
+                "STAT_ABSFailState" : {
+                    "bit_start" : 58,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "enums" : {
+                        "3" : "Invalid",
+                        "2" : "Reserved",
+                        "1" : "Error",
+                        "0" : "No error"
+                    }
+                },
+                "STAT_AutoHazardBlinking" : {
+                    "bit_start" : 60,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "AutoHazardBlinking OFF",
+                        "1" : "AutoHazardBlinking ON",
+                        "2" : "Reserved",
+                        "3" : "Invalid signal"
+                    }
+                }
+            }
+        },
+        "301" : {
+            "name" : "SCM_3",
+            "sender" : "GWM",
+            "length" : 3,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "TpTxIndex" : "0",
+                "GenMsgCycleTime" : "100"
+            },
+            "signals" : {
+                "CHKSM_SCM_3" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_SCM_3" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "accSpeed" : {
+                    "bit_start" : 12,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "No action",
+                        "1" : "Pressed",
+                        "2" : "Reserved",
+                        "3" : "Invalid signal"
+                    }
+                },
+                "DecelSpeed" : {
+                    "bit_start" : 14,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "No action",
+                        "1" : "Pressed",
+                        "2" : "Reserved",
+                        "3" : "Invalid signal"
+                    }
+                },
+                "CruiseControl" : {
+                    "bit_start" : 16,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "No action",
+                        "1" : "ON",
+                        "2" : "Reserved",
+                        "3" : "Invalid Signal"
+                    }
+                },
+                "CruiseControlSet" : {
+                    "bit_start" : 18,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "No action",
+                        "1" : "SET",
+                        "2" : "Reserved",
+                        "3" : "Invalid signal"
+                    }
+                },
+                "CruiseControl_Resume" : {
+                    "bit_start" : 22,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "No action",
+                        "1" : "Resume",
+                        "2" : "Reserved",
+                        "3" : "Invalid signal"
+                    }
+                }
+            }
+        },
+        "161" : {
+            "name" : "TCU_2",
+            "sender" : "GWM",
+            "length" : 8,
+            "attributes" : {
+                "GenMsgSendType" : "0",
+                "GenMsgILSupport" : "1",
+                "GenMsgCycleTime" : "10"
+            },
+            "signals" : {
+                "CHKSM_TCU_2" : {
+                    "bit_start" : 0,
+                    "length" : 8,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 255
+                },
+                "ALIVE_TCU_2" : {
+                    "bit_start" : 8,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 14
+                },
+                "IdleControlLoadTorque" : {
+                    "bit_start" : 12,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 0.5,
+                    "offset" : -1000,
+                    "min" : -1000,
+                    "max" : 1000,
+                    "unit" : "Nm"
+                },
+                "EngineSpeedTorqueCalc" : {
+                    "bit_start" : 24,
+                    "length" : 16,
+                    "little_endian" : 1,
+                    "factor" : 0.25,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 16383,
+                    "unit" : "rpm"
+                },
+                "ActualGear" : {
+                    "bit_start" : 40,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 15,
+                    "enums" : {
+                        "15" : "Invalid",
+                        "14" : "Reserved",
+                        "13" : "Reserved",
+                        "12" : "Reserved",
+                        "11" : "Reserved",
+                        "10" : "Parking",
+                        "9" : "Reverse",
+                        "8" : "Reserved",
+                        "7" : "Reserved",
+                        "6" : "6th gear",
+                        "5" : "5th gear",
+                        "4" : "4th gear",
+                        "3" : "3rd gear",
+                        "2" : "2nd gear",
+                        "1" : "1st gear",
+                        "0" : "Neutral"
+                    }
+                },
+                "TargetGear" : {
+                    "bit_start" : 44,
+                    "length" : 4,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 15,
+                    "enums" : {
+                        "8" : "Reserved",
+                        "7" : "Reserved",
+                        "6" : "6th gear",
+                        "5" : "5th gear",
+                        "4" : "4th gear",
+                        "3" : "3rd gear",
+                        "2" : "2nd gear",
+                        "1" : "1st gear",
+                        "0" : "Neutral",
+                        "15" : "Invalid",
+                        "14" : "Reserved",
+                        "13" : "Reserved",
+                        "12" : "Reserved",
+                        "11" : "Reserved",
+                        "10" : "Parking",
+                        "9" : "Reverse"
+                    }
+                },
+                "REQ_DesiredEngineIdleSpeed" : {
+                    "bit_start" : 48,
+                    "length" : 12,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 4090,
+                    "unit" : "rpm"
+                },
+                "STAT_ESS_Inhibit" : {
+                    "bit_start" : 60,
+                    "length" : 2,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 3,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : " No request",
+                        "1" : "Inhibit engine stop",
+                        "2" : "Engine start request",
+                        "3" : " Inhibit engine start"
+                    }
+                },
+                "STAT_ESS_Allowance" : {
+                    "bit_start" : 62,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "engine not allowed to stop auto",
+                        "1" : "engine may stop"
+                    }
+                },
+                "STAT_ESS_Failure" : {
+                    "bit_start" : 63,
+                    "length" : 1,
+                    "little_endian" : 1,
+                    "factor" : 1,
+                    "offset" : 0,
+                    "min" : 0,
+                    "max" : 1,
+                    "unit" : "Bit",
+                    "enums" : {
+                        "0" : "no fault",
+                        "1" : "fault"
+                    }
+                }
+            }
+        }
+    }
+}

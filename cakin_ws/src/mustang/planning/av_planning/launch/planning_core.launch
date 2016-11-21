@@ -1,0 +1,5 @@
+<launch>
+    <node name="planning_node1" pkg="av_planning" type="planning_node" output="screen">
+        <rosparam command="load" file="$(find av_planning)/config/av_planning.yaml" />
+    </node>
+</launch>
